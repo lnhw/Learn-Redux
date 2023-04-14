@@ -9,10 +9,8 @@ const TodoForm = () => {
     }
     function handleAddTodo(event) {
         event.preventDefault();
-        // console.log(title);
         dispatch(addTodo(title))
         setTitile("");
-
     }
     return (
         <form onSubmit={handleAddTodo}>
